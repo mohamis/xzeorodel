@@ -1,0 +1,11 @@
+Sitemap: https://xeozrodel.fr/api/posts-sitemap
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*Sitemap: https://xeozrodel.fr/api/posts-sitemap
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*
