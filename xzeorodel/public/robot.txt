@@ -1,9 +1,4 @@
-Sitemap: https://xeozrodel.fr/api/posts-sitemap
-
-User-agent: *
-Allow: /*
-
-Disallow: /api/*Sitemap: https://xeozrodel.fr/api/posts-sitemap
+Sitemap: https://hostname.com/api/sitemap.xml
 
 User-agent: *
 Allow: /*

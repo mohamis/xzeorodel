@@ -1,42 +1,54 @@
-import { SitemapStream, streamToPromise } from "sitemap";
-import type { NextApiRequest, NextApiResponse } from "next";
+// Import built-in types for API routes
+import { NextApiRequest, NextApiResponse } from "next";
+import { SitemapStream, streamToPromise, EnumChangefreq } from "sitemap";
+import { createGzip } from "zlib";
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  if (!res) return {};
   try {
+    // Set response header
+    res.setHeader("content-type", "application/xml");
+    res.setHeader("Content-Encoding", "gzip");
+
+    // A Transform for turning a Readable stream of either SitemapItemOptions or url strings into a Sitemap.
+    // The readable stream it transforms must be in object mode.
     const smStream = new SitemapStream({
-      hostname: `https://${req.headers.host}`,
+      hostname: "https://xeozrodel.fr",
     });
 
-    // List of posts
-    const posts: any[] = [];
-
-    // Create each URL row
-    posts.forEach((post) => {
-      smStream.write({
-        url: `/post/${post.slug}`,
-        changefreq: "daily",
-        priority: 0.9,
-      });
+    const pipeline = smStream.pipe(createGzip());
+    // Add any static entries here
+    smStream.write({
+      url: "/",
+      lastmod: process.env.siteUpdatedAt,
+      changefreq: EnumChangefreq.WEEKLY,
     });
+    smStream.write({
+      url: "/about",
+      lastmod: process.env.siteUpdatedAt,
+      changefreq: EnumChangefreq.MONTHLY,
+    });
+    smStream.write({
+      url: "/contact",
+      lastmod: process.env.siteUpdatedAt,
+      changefreq: EnumChangefreq.MONTHLY,
+    });
+    // E.g. we create a sitemap.xml for articles
+    // Set articles change frequencey is weekly
 
-    // End sitemap stream
     smStream.end();
 
-    // XML sitemap string
-    const sitemapOutput = (await streamToPromise(smStream)).toString();
-
-    // Change headers
-    res.writeHead(200, {
-      "Content-Type": "application/xml",
+    // cache the response
+    // streamToPromise.then(sm => sitemap = sm)
+    streamToPromise(pipeline);
+    // stream the response
+    pipeline.pipe(res).on("error", (e) => {
+      throw e;
     });
-
-    // Display output to user
-    res.end(sitemapOutput);
   } catch (e) {
-    console.log(e);
-    res.send(JSON.stringify(e));
+    res.status(500).end();
   }
 }
