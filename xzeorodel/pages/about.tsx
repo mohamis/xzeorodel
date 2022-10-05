@@ -1,12 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../components/NavBar";
+import CallToActionWithVideo from "../components/CTA";
 import SmallWithSocial from "../components/Footer";
 import { NextSeo } from "next-seo";
-import SplitWithImage from "../components/AboutUs";
-import SimpleThreeColumns from "../components/Features";
-import WithSpeechBubbles from "../components/Testimonials";
-import { Spacer } from "@chakra-ui/react";
 
 const Home: NextPage = () => {
   return (
@@ -42,11 +39,7 @@ const Home: NextPage = () => {
       />
       <main>
         <Navbar />
-        <SplitWithImage />
-        <br />
-        <SimpleThreeColumns />
-        <br />
-        <WithSpeechBubbles />
+        
       </main>
 
       <footer>

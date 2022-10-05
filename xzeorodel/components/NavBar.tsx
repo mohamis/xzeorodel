@@ -18,29 +18,14 @@ import {
 // Here we have used react-icons package for the icons
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import { BiChevronDown } from "react-icons/bi";
-import { RiFlashlightFill } from "react-icons/ri";
 
 const navLinks = [
-  { name: "About", path: "#" },
+  { name: "About Us", path: "#" },
   { name: "Services", path: "#" },
-  { name: "The world", path: "#" },
+  { name: "Destinations", path: "#" },
 ];
 
-const dropdownLinks = [
-  {
-    name: "Blog",
-    path: "#",
-  },
-  {
-    name: "Documentation",
-    path: "#",
-  },
-  {
-    name: "Github Repo",
-    path: "#",
-  },
-];
+
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -101,10 +86,10 @@ export default function Navbar() {
         <Button
           colorScheme="green"
           size="md"
-          rounded="md"
+          rounded="2xl"
           display={{ base: "none", md: "block" }}
         >
-          Book
+          Book Now
         </Button>
         <IconButton
           size="md"
