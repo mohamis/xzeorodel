@@ -14,8 +14,11 @@ import {
   Tag,
   HStack,
 } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 
 export default function CallToActionWithVideo() {
+  const router = useRouter();
+
   return (
     <Container minH={"86vh"} maxW={"7xl"} centerContent>
       <Stack
@@ -39,7 +42,14 @@ export default function CallToActionWithVideo() {
             Enjoy a magic safari in the realm of Xeozrodel! <br /> Discover the
             new world with our magical creatures and experience local living.
           </Text>
-
+          <Stack
+            spacing={{ base: 4, sm: 6 }}
+            direction={{ base: "column", sm: "row" }}
+          >
+            <Text color={"gray.500"}>
+              We are praised by intergalactic agencies
+            </Text>
+          </Stack>
           <HStack spacing={{ base: 4, sm: 6 }}>
             <Image
               alt={"We are best Image"}
@@ -61,15 +71,15 @@ export default function CallToActionWithVideo() {
             direction={{ base: "column", sm: "row" }}
           >
             <Button
-              rounded={"full"}
-              size={"lg"}
-              fontWeight={"normal"}
-              px={6}
-              colorScheme={"green"}
-              bg={"green.400"}
-              _hover={{ bg: "green.500" }}
+              onClick={() => {
+                router.push("/destinations");
+              }}
+              colorScheme="green"
+              size="md"
+              rounded="2xl"
+              display={{ base: "none", md: "block" }}
             >
-              I want to know more!
+              👉🏻 Discover the world
             </Button>
           </Stack>
         </Stack>

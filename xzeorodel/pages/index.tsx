@@ -3,17 +3,11 @@ import Head from "next/head";
 import Navbar from "../components/NavBar";
 import SmallWithSocial from "../components/Footer";
 import { NextSeo } from "next-seo";
-import SplitWithImage from "../components/AboutUs";
-import SimpleThreeColumns from "../components/Features";
-import WithSpeechBubbles from "../components/Testimonials";
-import { Spacer } from "@chakra-ui/react";
+import CallToActionWithVideo from "../components/CTA";
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Head>
-        <link rel="icon" href="/logoipsum.svg" />
-      </Head>
       <NextSeo
         title="Magic Safari ✨ - A luxury adventure"
         description="Magical Safari aims to open the doors to the realms of Xeozrodel. We are planning to organize a magic safari and let the tourist discover the magnificent world with our magical creatures."
@@ -42,11 +36,7 @@ const Home: NextPage = () => {
       />
       <main>
         <Navbar />
-        <SplitWithImage />
-        <br />
-        <SimpleThreeColumns />
-        <br />
-        <WithSpeechBubbles />
+        <CallToActionWithVideo />
       </main>
 
       <footer>

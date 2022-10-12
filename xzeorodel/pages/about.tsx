@@ -1,25 +1,24 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../components/NavBar";
-import CallToActionWithVideo from "../components/CTA";
 import SmallWithSocial from "../components/Footer";
 import { NextSeo } from "next-seo";
+import SplitWithImage from "../components/AboutUs";
+import SimpleThreeColumns from "../components/Features";
+import WithSpeechBubbles from "../components/Testimonials";
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Head>
-        <link rel="icon" href="/logoipsum.svg" />
-      </Head>
       <NextSeo
-        title="Magic Safari ✨ - A luxury adventure"
-        description="Magical Safari aims to open the doors to the realms of Xeozrodel. We are planning to organize a magic safari and let the tourist discover the magnificent world with our magical creatures."
-        canonical="https://www.xeozrodel.fr/"
+        title="Magic Safari ✨ - About Us"
+        description="Our agency has been working on putting our customers in the first place so you as your clients you will have the best experience that you wish."
+        canonical="https://www.xeozrodel.fr/about"
         openGraph={{
-          url: "https://www.xeozrodel.fr/",
-          title: "Magic Safari ✨ - Home",
+          url: "https://www.xeozrodel.fr/about",
+          title: "Magic Safari ✨ - About",
           description:
-            "Enjoy a unique adventure in the realms of Xeozrodel. Meet the local that live in the world, and enjoy magnificent landscape on our amazing animals.",
+            "Our agency has been working on putting our customers in the first place so you as your clients you will have the best experience that you wish.",
           images: [
             {
               url: "https://www.xeozrodel.fr/opengraph/screen.png",
@@ -39,7 +38,11 @@ const Home: NextPage = () => {
       />
       <main>
         <Navbar />
-        
+        <SplitWithImage />
+        <br />
+        <SimpleThreeColumns />
+        <br />
+        <WithSpeechBubbles />
       </main>
 
       <footer>
