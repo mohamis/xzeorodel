@@ -1,16 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Navbar from "../components/NavBar";
-import CallToActionWithVideo from "../components/CTA";
 import SmallWithSocial from "../components/Footer";
 import { NextSeo } from "next-seo";
+import CallToActionWithVideo from "../components/CTA";
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Head>
-        <link rel="icon" href="/logoipsum.svg" />
-      </Head>
       <NextSeo
         title="Magic Safari ✨ - A luxury adventure"
         description="Magical Safari aims to open the doors to the realms of Xeozrodel. We are planning to organize a magic safari and let the tourist discover the magnificent world with our magical creatures."
