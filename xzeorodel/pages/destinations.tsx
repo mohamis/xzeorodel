@@ -1,9 +1,7 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import Navbar from "../components/NavBar";
 import SmallWithSocial from "../components/Footer";
 import { NextSeo } from "next-seo";
-import CallToActionWithVideo from "../components/CTA";
 import Destinations from "../components/Destinations";
 
 const Home: NextPage = () => {

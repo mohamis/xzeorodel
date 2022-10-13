@@ -13,6 +13,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { FaCheckCircle } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 function PriceWrapper({ children }: { children: ReactNode }) {
   return (
@@ -30,6 +31,8 @@ function PriceWrapper({ children }: { children: ReactNode }) {
 }
 
 export default function ThreeTierPricing() {
+  const router = useRouter();
+
   return (
     <Box py={12}>
       <VStack spacing={2} textAlign="center">
@@ -93,7 +96,14 @@ export default function ThreeTierPricing() {
               </ListItem>
             </List>
             <Box w="80%" pt={7}>
-              <Button w="full" colorScheme="blue" variant="outline">
+              <Button
+                onClick={() => {
+                  router.push("/reservations");
+                }}
+                w="full"
+                colorScheme="blue"
+                variant="outline"
+              >
                 Book Now
               </Button>
             </Box>
@@ -165,7 +175,13 @@ export default function ThreeTierPricing() {
                 </ListItem>
               </List>
               <Box w="80%" pt={7}>
-                <Button w="full" colorScheme="red">
+                <Button
+                  onClick={() => {
+                    router.push("/reservations");
+                  }}
+                  w="full"
+                  colorScheme="red"
+                >
                   Book Now
                 </Button>
               </Box>
@@ -209,7 +225,14 @@ export default function ThreeTierPricing() {
               </ListItem>
             </List>
             <Box w="80%" pt={7}>
-              <Button w="full" colorScheme="yellow" variant="outline">
+              <Button
+                onClick={() => {
+                  router.push("/reservations");
+                }}
+                w="full"
+                colorScheme="yellow"
+                variant="outline"
+              >
                 Book Now
               </Button>
             </Box>

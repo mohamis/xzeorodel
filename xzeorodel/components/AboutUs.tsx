@@ -6,15 +6,8 @@ import {
   Heading,
   Text,
   Stack,
-  StackDivider,
-  Icon,
   useColorModeValue,
 } from "@chakra-ui/react";
-import {
-  IoAnalyticsSharp,
-  IoLogoBitcoin,
-  IoSearchSharp,
-} from "react-icons/io5";
 import { ReactElement } from "react";
 
 interface FeatureProps {
