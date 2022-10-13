@@ -1,0 +1,36 @@
+{
+    "stars": [
+        { 
+            "id": "mg1", 
+            "name": "Special News about Christmas Eve", 
+            "description": "Christmas is in the corner ! For this event of the year, Magic Safari of Xeozrodrel is preparing something new for you ! We offer you to come with us to visit places with a christmas eve touch. You will discover christmas food, fesitvals and animations ! Stay in touch with us, news updates are coming, don't miss this.  Sneakpeek ! For example, during one week you would search for Christmas trees and then go to the Safari Lodge for dinner. You will go to Safari Lodge for lunch, and go back again at the Safari Lodge for dinner too. We went on a Safari Xeozrodel on Christmas day and returned to Safari Lodge for a lunch that afternoon. Then we went to Safari Lodge for dinner that evening and then returned to Safari Lodge in the morning.", 
+            "link": "",
+            "created_at": "Wed Nov 06 2022",
+            "img":"/assets/blog/christmas.png"
+        },
+        { 
+            "id": "mt2", 
+            "name": "A new city to discover in Xeozrodel", 
+            "description": "Aber Woods 🌳 is now a place to visit. Come and discover thoses woods with our elf guides, that know the place better that anybody ! And maybe by chance you will see an elfyki animal that live in those woods.  ", 
+            "link": "",
+            "created_at": "Sun Apr 03 2022",
+            "img":"/assets/worlds/2.webp"
+        },
+        { 
+            "id": "pm3", 
+            "name": "Magic Safari is on XeozrodelNewsTV", 
+            "description": "We were on live ! Let's rewatch the moment of fame that our company had during XeozrodelNewsTV 📺 . We had the change to be invited to the TV to explain our unique concept in Xeozrodel ! THANK YOU XeozrodelNewsTV for having us. ", 
+            "link": "",
+            "created_at": "Sun Jan 03 2022",
+            "img":"https://images.unsplash.com/photo-1593784991251-92ded75ea290?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        },
+        { 
+            "id": "sto4", 
+            "name": "Magic Safari of Xeozrodel is born", 
+            "description": "This day will be in the history ! Magic Safari of Xeozrodel is born. Let's talk about the philosophy of our company.🌟 Our agency has been working on putting our customers in the first place so you as your clients you will have the best experience that you wish.", 
+            "link": "",
+            "created_at": "Sun Dec 03 2015",
+            "img":"/assets/cta.jpg"
+        }
+    ]
+}
