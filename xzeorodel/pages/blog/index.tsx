@@ -9,11 +9,11 @@ const Home: NextPage = () => {
   return (
     <div>
       <NextSeo
-        title="Magic Safari ✨ - A luxury adventure"
-        description="Magical Safari aims to open the doors to the realms of Xeozrodel. We are planning to organize a magic safari and let the tourist discover the magnificent world with our magical creatures."
-        canonical="https://www.xeozrodel.fr/"
+        title="Magic Safari ✨ - The blog"
+        description="Magical Safari aims to open the doors to the realms of Xeozrodel. Let's read our blog and latest news!"
+        canonical="https://www.xeozrodel.fr/blog"
         openGraph={{
-          url: "https://www.xeozrodel.fr/",
+          url: "https://www.xeozrodel.fr/blog",
           title: "Magic Safari ✨ - Home",
           description:
             "Enjoy a unique adventure in the realms of Xeozrodel. Meet the local that live in the world, and enjoy magnificent landscape on our amazing animals.",

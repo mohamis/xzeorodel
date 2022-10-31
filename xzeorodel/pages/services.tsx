@@ -11,9 +11,9 @@ const Home: NextPage = () => {
       <NextSeo
         title="Magic Safari ✨ - Our services"
         description="Magical Safari aims to open the doors to the realms of Xeozrodel. Find more about our services and select the package that suits you best."
-        canonical="https://www.xeozrodel.fr/"
+        canonical="https://www.xeozrodel.fr/services"
         openGraph={{
-          url: "https://www.xeozrodel.fr/",
+          url: "https://www.xeozrodel.fr/services",
           title: "Magic Safari ✨ - Home",
           description:
             "Enjoy a unique adventure in the realms of Xeozrodel. Meet the local that live in the world, and enjoy magnificent landscape on our amazing animals.",

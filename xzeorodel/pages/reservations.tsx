@@ -10,9 +10,9 @@ const Home: NextPage = () => {
       <NextSeo
         title="Magic Safari ✨ - About Us"
         description="Our agency has been working on putting our customers in the first place so you as your clients you will have the best experience that you wish."
-        canonical="https://www.xeozrodel.fr/about"
+        canonical="https://www.xeozrodel.fr/reservations"
         openGraph={{
-          url: "https://www.xeozrodel.fr/about",
+          url: "https://www.xeozrodel.fr/reservations",
           title: "Magic Safari ✨ - About",
           description:
             "Our agency has been working on putting our customers in the first place so you as your clients you will have the best experience that you wish.",
