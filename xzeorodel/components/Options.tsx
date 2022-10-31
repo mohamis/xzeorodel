@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Divider,
   Heading,
   List,
@@ -8,7 +7,6 @@ import {
   ListItem,
   Stack,
   Text,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { FaCheckCircle } from "react-icons/fa";
 

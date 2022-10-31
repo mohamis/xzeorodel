@@ -1,19 +1,19 @@
 import type { NextPage } from "next";
-import Navbar from "../components/NavBar";
-import SmallWithSocial from "../components/Footer";
+import Head from "next/head";
+import Navbar from "../../components/NavBar";
+import SmallWithSocial from "../../components/Footer";
 import { NextSeo } from "next-seo";
-import ThreeTierPricing from "../components/Pricing";
-import ThreeTierPricingHorizontal from "../components/Options";
+import Posts from "../../components/Blog";
 
 const Home: NextPage = () => {
   return (
     <div>
       <NextSeo
-        title="Magic Safari ✨ - Our services"
-        description="Magical Safari aims to open the doors to the realms of Xeozrodel. Find more about our services and select the package that suits you best."
-        canonical="https://www.xeozrodel.fr/services"
+        title="Magic Safari ✨ - The blog"
+        description="Magical Safari aims to open the doors to the realms of Xeozrodel. Let's read our blog and latest news!"
+        canonical="https://www.xeozrodel.fr/blog"
         openGraph={{
-          url: "https://www.xeozrodel.fr/services",
+          url: "https://www.xeozrodel.fr/blog",
           title: "Magic Safari ✨ - Home",
           description:
             "Enjoy a unique adventure in the realms of Xeozrodel. Meet the local that live in the world, and enjoy magnificent landscape on our amazing animals.",
@@ -36,8 +36,7 @@ const Home: NextPage = () => {
       />
       <main>
         <Navbar />
-        <ThreeTierPricing />
-        <ThreeTierPricingHorizontal />
+        <Posts />
       </main>
 
       <footer>

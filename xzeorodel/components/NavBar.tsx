@@ -13,11 +13,13 @@ import {
 // Here we have used react-icons package for the icons
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import router from "next/router";
 
 const navLinks = [
   { name: "About Us", path: "about" },
   { name: "Services", path: "services" },
   { name: "Destinations", path: "destinations" },
+  { name: "Blog", path: "blog" },
 ];
 
 export default function Navbar() {
@@ -56,6 +58,9 @@ export default function Navbar() {
           size="md"
           rounded="2xl"
           display={{ base: "none", md: "block" }}
+          onClick={() => {
+            router.push("/reservations");
+          }}
         >
           Book Now
         </Button>
