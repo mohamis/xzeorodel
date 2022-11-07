@@ -108,7 +108,7 @@ export default function CallToActionWithVideo() {
             overflow={"hidden"}
           >
             <Image
-              alt={"Hero Image"}
+              alt={"DallE prompt: Cat in a wonderful magical safari"}
               fit={"cover"}
               align={"center"}
               w={"100%"}
