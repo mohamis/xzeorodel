@@ -38,8 +38,7 @@ export default function Navbar() {
           w={8}
           color="white"
           alt="logo"
-        />
-
+        />{" "}
         <HStack spacing={8} alignItems="center">
           <HStack
             as="nav"
@@ -52,7 +51,6 @@ export default function Navbar() {
             ))}
           </HStack>
         </HStack>
-
         <Button
           colorScheme="green"
           size="md"

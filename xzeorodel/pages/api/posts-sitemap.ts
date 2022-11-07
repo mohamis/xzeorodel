@@ -32,9 +32,19 @@ export default async function handler(
       changefreq: EnumChangefreq.MONTHLY,
     });
     smStream.write({
-      url: "/contact",
+      url: "/reservations",
       lastmod: process.env.siteUpdatedAt,
       changefreq: EnumChangefreq.MONTHLY,
+    });
+    smStream.write({
+      url: "/services",
+      lastmod: process.env.siteUpdatedAt,
+      changefreq: EnumChangefreq.MONTHLY,
+    });
+    smStream.write({
+      url: "/blog",
+      lastmod: process.env.siteUpdatedAt,
+      changefreq: EnumChangefreq.WEEKLY,
     });
     // E.g. we create a sitemap.xml for articles
     // Set articles change frequencey is weekly

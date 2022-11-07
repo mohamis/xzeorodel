@@ -12,9 +12,13 @@ import {
   Image,
   Text,
   Button,
+  Flex,
+  HStack,
+  IconButton,
+  Link,
+  useDisclosure,
 } from "@chakra-ui/react";
 import SmallWithSocial from "../../components/Footer";
-import Navbar from "../../components/NavBar";
 import { NextSeo } from "next-seo";
 
 interface starInterface {
@@ -75,7 +79,24 @@ function ProjectPage(props: {
   const router = useRouter();
 
   if (props.hasError) {
-    return <h1>Error - please try another parameter</h1>;
+    return (
+      <>
+        <h1>Error - please try another parameter</h1>
+        <Button
+          mt={7}
+          maxW={"7vw"}
+          onClick={() => {
+            router.push("/blog");
+          }}
+          colorScheme="green"
+          size="md"
+          rounded="2xl"
+          display={{ base: "none", md: "block" }}
+        >
+          👈🏻 Go back
+        </Button>
+      </>
+    );
   }
 
   if (router.isFallback) {
@@ -110,74 +131,66 @@ function ProjectPage(props: {
         }}
       />
       <main>
-        <Navbar />
-
-        <div>
-          <Center py={6}>
+        <Center minH={"95vh"} py={6}>
+          <Box
+            maxW={"40vw"}
+            w={"full"}
+            bg={"white"}
+            boxShadow={"2xl"}
+            rounded={"md"}
+            p={6}
+            overflow={"hidden"}
+          >
             <Box
-              maxW={"40vw"}
-              w={"full"}
-              bg={"white"}
-              boxShadow={"2xl"}
-              rounded={"md"}
-              p={6}
-              overflow={"hidden"}
+              w={"auto"}
+              bg={"grey.500"}
+              mt={-6}
+              mx={-6}
+              mb={6}
+              pos={"relative"}
             >
-              <Box
-                w={"auto"}
-                bg={"grey.500"}
-                mt={-6}
-                mx={-6}
-                mb={6}
-                pos={"relative"}
-              >
-                <Center>
-                  <Image
-                    src={props.specificStarData.img}
-                    alt="image"
-                    objectFit="cover"
-                  />
-                </Center>
-              </Box>
-              <Stack>
-                <Text
-                  color={"green.500"}
-                  textTransform={"uppercase"}
-                  fontWeight={800}
-                  fontSize={"sm"}
-                  letterSpacing={1.1}
-                >
-                  Blog
-                </Text>
-
-                <Heading
-                  color={"gray.700"}
-                  fontSize={"2xl"}
-                  fontFamily={"body"}
-                >
-                  <br /> <br />
-                  {props.specificStarData.name}
-                </Heading>
-                <Text color={"gray.500"}>
-                  {props.specificStarData.description}
-                </Text>
-              </Stack>
-              <Button
-                mt={7}
-                maxW={"7vw"}
-                onClick={() => {
-                  router.push("/blog");
-                }}
-                colorScheme="green"
-                size="md"
-                rounded="2xl"
-                display={{ base: "none", md: "block" }}
-              >
-                👈🏻 Go back
-              </Button>
+              <Center>
+                <Image
+                  src={props.specificStarData.img}
+                  alt="image"
+                  objectFit="cover"
+                />
+              </Center>
             </Box>
-          </Center>
-        </div>
+            <Stack>
+              <Text
+                color={"green.500"}
+                textTransform={"uppercase"}
+                fontWeight={800}
+                fontSize={"sm"}
+                letterSpacing={1.1}
+              >
+                Blog
+              </Text>
+
+              <Heading color={"gray.700"} fontSize={"2xl"} fontFamily={"body"}>
+                <br /> <br />
+                {props.specificStarData.name}
+              </Heading>
+              <Text color={"gray.500"}>
+                {props.specificStarData.description}
+              </Text>
+            </Stack>
+            <Button
+              mt={7}
+              maxW={"7vw"}
+              onClick={() => {
+                router.push("/blog");
+              }}
+              colorScheme="green"
+              size="md"
+              rounded="2xl"
+              display={{ base: "none", md: "block" }}
+            >
+              👈🏻 Go back
+            </Button>
+          </Box>
+        </Center>
       </main>
 
       <footer>

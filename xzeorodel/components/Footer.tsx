@@ -2,6 +2,7 @@ import {
   Box,
   chakra,
   Container,
+  Link,
   Stack,
   Text,
   useColorModeValue,
@@ -9,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { ReactNode } from "react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const SocialButton = ({
   children,
@@ -68,6 +70,22 @@ export default function SmallWithSocial() {
           <SocialButton label={"Instagram"} href={"#"}>
             <FaInstagram />
           </SocialButton>
+        </Stack>
+      </Container>
+      <Container
+        as={Stack}
+        maxW={"6xl"}
+        pb={4}
+        direction={{ base: "column", md: "row" }}
+        spacing={4}
+        justify={{ base: "center", md: "space-between" }}
+        align={{ base: "center", md: "center" }}
+      >
+        <Stack direction={"row"} spacing={6}>
+          <Text>Partners</Text>
+          <Link href="https://www.xeozrodel.online" isExternal>
+            Xeozrodel Tavern <ExternalLinkIcon mx="2px" />
+          </Link>
         </Stack>
       </Container>
     </Box>
