@@ -21,6 +21,7 @@ const articles = [
     id: 1,
     tags: ["News"],
     title: "Special News about Christmas Eve",
+    subtitles: `Christmas is in the corner ! Let's talk about it and what you can do in Xeozrodel during this magical moment 🎅 .`,
     content: `Christmas is in the corner ! Let's talk about it and what you can do in Xeozrodel during this magical moment 🎅 .`,
     created_at: "Wed Apr 06 2022",
     slug: "mg1",
@@ -29,6 +30,7 @@ const articles = [
     id: 2,
     tags: ["Discover"],
     title: "A new city to discover in Xeozrodel",
+    subtitles: `Magic Safari just add a new city to discover, come wiht us to visit the Aber Woods 🌳.`,
     content: `Magic Safari just add a new city to discover, come wiht us to visit the Aber Woods 🌳.`,
     created_at: "Sun Apr 03 2022",
     slug: "mt2",
@@ -37,6 +39,7 @@ const articles = [
     id: 3,
     tags: ["Media", "News"],
     title: "Magic Safari is on XeozrodelNewsTV",
+    subtitles: `We were on live ! Let's rewatch the moment of fame that our company had during XeozrodelNewsTV 📺 .`,
     content: `We were on live ! Let's rewatch the moment of fame that our company had during XeozrodelNewsTV 📺 .`,
     created_at: "Sun Jan 03 2022",
     slug: "pm3",
@@ -45,6 +48,7 @@ const articles = [
     id: 4,
     tags: ["Creation"],
     title: "Magic Safari of Xeozrodel is born",
+    subtitles: `This day will be in the history ! Magis Safari of Xeozrodel is born. Let's talk about the philosophy of our company. 🌟`,
     content: `This day will be in the history ! Magis Safari of Xeozrodel is born. Let's talk about the philosophy of our company. 🌟`,
     created_at: "Sun Dec 03 2021",
     slug: "sto4",
@@ -97,7 +101,7 @@ const Posts = () => {
                   noOfLines={2}
                   lineHeight="normal"
                 >
-                  {article.content}
+                  {article.subtitles}
                 </Text>
               </Box>
               <Box>

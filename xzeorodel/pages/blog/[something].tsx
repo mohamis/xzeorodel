@@ -172,7 +172,7 @@ function ProjectPage(props: {
                 <br /> <br />
                 {props.specificStarData.name}
               </Heading>
-              <Text color={"gray.500"}>
+              <Text color={"gray.500"} whiteSpace="pre-line">
                 {props.specificStarData.description}
               </Text>
             </Stack>
