@@ -20,6 +20,7 @@ import {
 } from "@chakra-ui/react";
 import SmallWithSocial from "../../components/Footer";
 import { NextSeo } from "next-seo";
+import ReactMarkdown from "react-markdown";
 
 interface starInterface {
   id: string;
@@ -157,7 +158,7 @@ function ProjectPage(props: {
                 />
               </Center>
             </Box>
-            <Stack>
+            <Stack color={"gray.500"} whiteSpace="pre-line">
               <Text
                 color={"green.500"}
                 textTransform={"uppercase"}
@@ -172,9 +173,9 @@ function ProjectPage(props: {
                 <br /> <br />
                 {props.specificStarData.name}
               </Heading>
-              <Text color={"gray.500"}>
+              <ReactMarkdown>
                 {props.specificStarData.description}
-              </Text>
+              </ReactMarkdown>
             </Stack>
             <Button
               mt={7}

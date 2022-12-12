@@ -1,36 +1,36 @@
 {
-    "stars": [
-        { 
-            "id": "mg1", 
-            "name": "Special News about Christmas Eve", 
-            "description": "Christmas is in the corner ! For this event of the year, Magic Safari of Xeozrodrel is preparing something new for you ! We offer you to come with us to visit places with a christmas eve touch. You will discover christmas food, fesitvals and animations ! Stay in touch with us, news updates are coming, don't miss this.  Sneakpeek ! For example, during one week you would search for Christmas trees and then go to the Safari Lodge for dinner. You will go to Safari Lodge for lunch, and go back again at the Safari Lodge for dinner too. We went on a Safari Xeozrodel on Christmas day and returned to Safari Lodge for a lunch that afternoon. Then we went to Safari Lodge for dinner that evening and then returned to Safari Lodge in the morning.", 
-            "link": "",
-            "created_at": "Wed Nov 06 2022",
-            "img":"/assets/blog/christmas.png"
-        },
-        { 
-            "id": "mt2", 
-            "name": "A new city to discover in Xeozrodel", 
-            "description": "Aber Woods 🌳 is now a place to visit. Come and discover thoses woods with our elf guides, that know the place better that anybody ! And maybe by chance you will see an elfyki animal that live in those woods.  ", 
-            "link": "",
-            "created_at": "Sun Apr 03 2022",
-            "img":"/assets/worlds/2.webp"
-        },
-        { 
-            "id": "pm3", 
-            "name": "Magic Safari is on XeozrodelNewsTV", 
-            "description": "We were on live ! Let's rewatch the moment of fame that our company had during XeozrodelNewsTV 📺 . We had the change to be invited to the TV to explain our unique concept in Xeozrodel ! THANK YOU XeozrodelNewsTV for having us. ", 
-            "link": "",
-            "created_at": "Sun Jan 03 2022",
-            "img":"https://images.unsplash.com/photo-1593784991251-92ded75ea290?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-        },
-        { 
-            "id": "sto4", 
-            "name": "Magic Safari of Xeozrodel is born", 
-            "description": "This day will be in the history ! Magic Safari of Xeozrodel is born. Let's talk about the philosophy of our company.🌟 Our agency has been working on putting our customers in the first place so you as your clients you will have the best experience that you wish.", 
-            "link": "",
-            "created_at": "Sun Dec 03 2015",
-            "img":"/assets/cta.jpg"
-        }
-    ]
+  "stars": [
+    {
+      "id": "mg1",
+      "name": "Special News about Christmas Eve",
+      "description": "Christmas is in the corner ! For this event of the year, Magic Safari of Xeozrodrel is preparing something new for you ! We offer you to come with us to visit places with a christmas eve touch. You will discover christmas food, fesitvals and animations ! \n Stay in touch with us, news updates are coming, don't miss this.  \n A quick Sneakpeek for you *readers* ! \n For example, during one week you would search for Christmas trees and then go to the Safari Lodge for dinner.\n You will go to Safari Lodge for lunch, and go back again at the Safari Lodge for dinner too. We are going to take you see the eye of the tiger that dance through the fire of chrismas, you are going to hear some screams and if you make a wish before a scream, this wish is sure to become a reality! After this trip on a **Safari Xeozrodel on Christmas day**, you will return to Safari Lodge for a lunch that afternoon.\n Then at the evening, you will stay at Safari Lodge for dinner, and start a festive night with elves and mage.\n Come with us this christmas!",
+      "link": "",
+      "created_at": "Wed Nov 06 2022",
+      "img": "/assets/blog/christmas.png"
+    },
+    {
+      "id": "mt2",
+      "name": "A new city to discover in Xeozrodel",
+      "description": "Aber Woods 🌳 is now a place to visit. Come and discover thoses woods with our elf guides, that know the place better that anybody ! Our elf guides are going to show you how to make mystical fire all by **yourself**!\n We are planning to open multiple activities around Aber Woods, and by choosing Magical Safari for your trip to Aber Woodsin Xeozrodel, you will have **free** delicacies included in your trip.\n\n The people that live around Aber Woods are the most welcoming people that you will find around Xeozrodel.\n The objective of this tour is to go around the city and find what make it so special. Some people found a whole underworld and a secret market that we will also get you to in order to discover some Xeozrodelian delight. The elves are going also to introduce you to the mage gourou of this region, he will have many **surprises** for you.\n\n This region is full of magnificient **flying** creatures, we will stop by the natural park of Aber Woods and see what the nature has to offer.\n And maybe by chance you will see an elfyki animal that live in those woods. \n We suggest that you visit this location with family for dreaming surprises that will make your children happy. It's a journey to never forget in Xeozrodel.",
+      "link": "",
+      "created_at": "Sun Apr 03 2022",
+      "img": "/assets/worlds/2.webp"
+    },
+    {
+      "id": "pm3",
+      "name": "Magic Safari is on XeozrodelNewsTV",
+      "description": "We were on live ! Let's rewatch the moment of fame that our company had during Synchronisation on XeozrodelNewsTV 📺. \n\n We had the chance to be invited to the TV to explain our unique concept in Xeozrodel and also to present the Synchronisation feast in our realm ! \nSynchronization is one of the biggest moment in Xeozrodel. It's a great feast where everyone celebrates the realm. All of the mage will synchronize around the realm to produce magnificient drawings in the sky. \nThis allows the people being in Xeozrodel at this **time** of year to enjoy the same moment as others!\nThe synchronization mechanism that mages uses place a pigment of color every minute in the sky while a magic guardian is spreading the drawing around the world. \n\nThere are two types of synchronization that you can find.\n• 🌇 The color synchronization will be a mix of colors and will be available around the world the whole day.\n> \"I love to wake up on this day and seeing all these colors reflecting in my living room.\n • 🥰 The night synchronization will keep the colors choosed by the mages and display a representation of the history of  **Xeozrodel**.\n> \"It's the best moment of the year.\n\n THANK YOU XeozrodelNewsTV for having us. ",
+      "link": "",
+      "created_at": "Sun Jan 03 2022",
+      "img": "https://images.unsplash.com/photo-1593784991251-92ded75ea290?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      "id": "sto4",
+      "name": "Magic Safari of Xeozrodel is born",
+      "description": "This day will be in the history ! Magic Safari of Xeozrodel is born. Let's talk about the philosophy of our company.\n🌟 Our agency has been working on putting our customers in the first place so you as your clients you will have the best experience that you wish.\n You will have the chance to explore the realm of Xeozrodel using our fleet of magical animals. The tours are designed to be done with your whole family and follow assigned agent that will explain to you the history of each place.\n It will be possible for you to choose the city of where you want to start your journey. Each place will have a unique hotel theme and beautiful taverns where to eat and drink.\n\n **Here a quick *list* of things to do while being in Xeozrodel:**\n 👉 Cycle to hidden gems \nXeozrodel have many hidden places like the wonderful waterfall of Bluehealda Hills.You will have the chance to see beautiful sunsets while having your feet submerged under water.\n👉 See windmills, countryside and beaches\nWhile being at Aber Woods, you will have chance to see windmills and beautiful countryside. Don't forget to take a look at Pops Tart.\n👉 Immerse youself at cultural events\n Around the Diculson's Hold castle, there is a village where we can find multiple cultural events that will make your journey unique. You can also have the chance to encounter the path of mage that will show you some tricks to impress your friends.\n\n Have a wonderful moment here in Xeozrodel, our team will be available for any enquiry.",
+      "link": "",
+      "created_at": "Sun Dec 03 2015",
+      "img": "/assets/cta.jpg"
+    }
+  ]
 }
